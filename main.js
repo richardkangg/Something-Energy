@@ -1,29 +1,19 @@
 
 
-// const footer = document.body.querySelector('.footer');
-
-// document.body.onscroll = function() {
-//     const scroller = document.body.scrollTop();
-//     let position = scroll(0, 650);
-//     console.log(scroller);
-//     if (scroller > position) {
-//         footer.removeClass('hide');
-//     }
-//         else {footer.addClass('hide');
-
-//         }
-//     };
-
 const beverage = document.body.querySelector('#beverage');
-beverage.onClick = scroll(0, 610);
+let link1 = document.getElementById("mark1").offsetTop;
+console.log(link1);
+beverage.onClick = scroll(0, link1);
+// beverage.onClick = scroll(0, 536);
 
 window.onscroll = function() {hideFooter()};
 
 const hideFooter = function() {
-    if (document.documentElement.scrollTop > 610) {
-//   if (document.body.scrollTop > 610 || document.documentElement.scrollTop > 610) {
-    document.getElementById("foot").className = "hide";
-  } else {
+    if (document.documentElement.scrollTop > 535) {
     document.getElementById("foot").className = "";
+    document.getElementById("header2").className = "";
+  } else {
+    document.getElementById("foot").className = "hide";
+    document.getElementById("header2").className = "hideNav";
   }
 }
