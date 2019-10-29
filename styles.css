@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .head {
@@ -32,9 +32,14 @@ body {
    width: 100%;
 }
 
-.bar {
+.linkydinks {
+    display: flex;
     position: sticky;
-    bottom: 0;
+}
+
+.bar {
+    position: fixed;
+    /* bottom: 0; */
     background: #845EC2;
     padding: 30px 0 30px 0;
     width: 100%;
@@ -66,16 +71,32 @@ a {
     text-decoration: none;
 }
 
-/* .foot {
-    position: sticky;
+.foot {
+    display: flex;
+}
+
+.footscreen {
+    position: fixed;
     bottom: 0;
     background: #845EC2;
-    padding: 30px 0 30px 0;
+    /* padding: 8px 0 8px 0; */
+    height: 50px;
     width: 100%;
     margin: 0, 100px;
-    top: 0;
     z-index: 100;
-} */
+    justify-content: flex-start;
+}
+
+.foottext {
+    /* align-items: flex-start; */
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+  }
 
 .flavors {
     display: flex;
@@ -88,3 +109,26 @@ a {
     padding: 100px 50px 100px 50px;
 }
 
+.about {
+    display: flex;
+    background: #00C9A7;
+    padding: 50px 50px 50px 0;
+    height: 500px;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+p {
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.products {
+    color: white;
+    flex: space-around;
+    width: 500px;
+    text-align: center;
+}
