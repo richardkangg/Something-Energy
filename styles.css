@@ -84,13 +84,25 @@ a {
     width: 100%;
     margin: 0, 100px;
     z-index: 100;
-    justify-content: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footbox {
+    display: flex;
+    color: #FBEAFF;
+    /* padding: 5px; */
+    flex-direction: row;
+    /* width: 500px; */
+    text-align: center;
+    justify-content: space-around;
 }
 
 .foottext {
-    /* align-items: flex-start; */
-    flex-direction: row;
-    /* justify-content: flex-start; */
+    text-align: left;
+}
+
+.footscreen p {
     font-size: 12px;
 }
 
@@ -114,10 +126,17 @@ a {
     background: #00C9A7;
     padding: 50px 50px 50px 0;
     height: 500px;
-    justify-content: center;
+    /* justify-content:center;  */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
     font-family: 'Staatliches', cursive;
 }
 
@@ -128,7 +147,47 @@ p {
 
 .products {
     color: white;
-    flex: space-around;
-    width: 500px;
+    /* flex: space-around; */
+    width: 600px;
     text-align: center;
+}
+
+.ing {
+    display: flex;
+    color: white;
+    padding: 5px;
+    flex-direction: row;
+    /* width: 500px; */
+    text-align: center;
+}
+
+/* .caffeine {
+    width: 400;
+    flex:space-around;
+} */
+
+.community {
+    display: flex;
+    border: 1px solid red;
+    padding: 50px 50px 50px 0;
+    height: 500px;
+    /* justify-content:center;  */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.partnerstitle {
+    width: 600px;
+    text-align: center;
+}
+
+.community h1 {
+    color: #00C9A7;
+}
+
+.community p {
+    color: #4E4E4E;
+    /* width: 600px; */
+    /* text-align: center; */
 }
