@@ -16,3 +16,14 @@
 
 const beverage = document.body.querySelector('#beverage');
 beverage.onClick = scroll(0, 610);
+
+window.onscroll = function() {hideFooter()};
+
+const hideFooter = function() {
+    if (document.documentElement.scrollTop > 610) {
+//   if (document.body.scrollTop > 610 || document.documentElement.scrollTop > 610) {
+    document.getElementById("foot").className = "hide";
+  } else {
+    document.getElementById("foot").className = "";
+  }
+}
