@@ -9,7 +9,7 @@ beverage.onClick = scroll(0, link1);
 window.onscroll = function() {hideFooter()};
 
 const hideFooter = function() {
-    if (document.documentElement.scrollTop > 535) {
+    if (document.documentElement.scrollTop > 535 ) {
     document.getElementById("foot").className = "";
     document.getElementById("header2").className = "";
   } else {
