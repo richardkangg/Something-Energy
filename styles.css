@@ -2,10 +2,18 @@
 
 body {
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.head {
+/* .head-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.heady {
+    /* height: 100%;
+    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,23 +28,38 @@ body {
 
 .overlay {
     position: absolute;
+    height: 86vh;
     width: 100%;
-    height: 100%;
     background: #845EC2;
     opacity: 45%;
     z-index: 2;
 }
 
 .gaming {
-   position: relative;
-   width: 100%;
+    position: relative;
+    /* width: 100%; */
+    height: 86vh;
+    width: 100%;
 }
 
+/* .linky {
+} */
+
 .bar {
-    position: sticky;
-    bottom: 0;
+    position: absolute;
     background: #845EC2;
     padding: 30px 0 30px 0;
+    width: 100%;
+    margin: 0, 100px;
+    bottom: 0;
+    z-index: 100;
+}
+
+.bar2 {
+    position: fixed;
+    /* bottom: 0; */
+    background: #845EC2;
+    /* padding: 30px 0 30px 0; */
     width: 100%;
     margin: 0, 100px;
     top: 0;
@@ -50,9 +73,17 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     font-family: 'Staatliches', cursive;
     font-size: 20px;
 
+}
+
+.smalllogo {
+    width: 70px;
+    animation-name: discoLogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 li {
@@ -66,16 +97,52 @@ a {
     text-decoration: none;
 }
 
-/* .foot {
-    position: sticky;
+.foot {
+    display: flex;
+}
+
+.footscreen {
+    position: fixed;
     bottom: 0;
     background: #845EC2;
-    padding: 30px 0 30px 0;
+    /* padding: 8px 0 8px 0; */
+    height: 50px;
     width: 100%;
     margin: 0, 100px;
-    top: 0;
     z-index: 100;
-} */
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footbox {
+    display: flex;
+    color: #FBEAFF;
+    /* padding: 5px; */
+    flex-direction: row;
+    /* width: 500px; */
+    text-align: center;
+    justify-content: space-around;
+}
+
+.foottext {
+    text-align: left;
+}
+
+.footscreen p {
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+  }
+
+.hideNav {
+    display: none;
+}
+
+.display {
+    display: flex;
+}
 
 .flavors {
     display: flex;
@@ -84,7 +151,292 @@ a {
     margin: auto;
 }
 
-.can {
-    padding: 100px 50px 100px 50px;
+.cans {
+    height: 100vh;
+    border: 3px solid brown;
+    display: flex;
+    flex-direction: column;
 }
 
+.can {
+    padding: 100px 50px 100px 50px;
+    border: 3px solid green;
+}
+
+.can:hover {
+    animation-name: clink;
+    animation-duration: .25s;
+}
+
+.slides {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    border: 3px solid blue;
+}
+
+.slide1 {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide2 {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide3 {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slidecan {
+    position: relative;
+    width: 175px;
+    margin-left: 35px;
+    z-index: 50;
+    border: 3px solid red;
+}
+
+.slidetext {
+    position: relative;
+    z-index: 51;
+    font-size: 13px;
+    width: 500px;
+    border: 2px solid red;
+    color: white;
+    margin-left: 30px;
+    /* right: 15%;
+    margin-top: -1px; */
+}
+
+.slidebox {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    background: #00C9A7;
+    border-radius: 10px;
+    z-index: 49;
+}
+
+.rightarrow {
+    position: relative;
+    height: 75px;
+    border: 2px solid green;
+    left: 11%;
+    z-index: 60;
+}
+
+.leftarrow {
+    position: relative;
+    height: 75px;
+    border: 2px solid green;
+    z-index: 60;
+    margin-left: -10%;
+}
+
+.about {
+    display: flex;
+    background: #00C9A7;
+    padding: 0 0 50px 0;
+    /* height: 400px; */
+    height: 100vh;
+    justify-content:center; 
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+p {
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.products {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 600px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.ing {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+}
+
+.ingredients {
+    padding: 20px;
+}
+
+.ingpic {
+    width: 70px;
+}
+
+.ing p {
+    font-size: 13px;
+}
+
+.community {
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 400px; */
+    height: 100vh;
+    justify-content:center; 
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.partnerstitle {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.community h1 {
+    color: #00C9A7;
+}
+
+.community p {
+    color: #4E4E4E;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    text-align: center;
+    /* border: 1px solid red; */
+    justify-content: center;
+    margin: 20px auto 0 auto;
+}
+
+.sponsor {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+@media (max-width: 420px) {
+
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 90px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+
+    .gaming {
+        height: 75vh;
+     }
+
+    .overlay {
+        height: 75vh;
+    }
+
+    .bar {
+        position: fixed;
+    }
+
+    ul {
+        flex-direction: column;
+        font-size: 100px;
+    }
+
+    .bar2 {
+        top: initial;
+        bottom: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .about {
+        height: 3600px;
+        border-radius: 50px;
+        margin: 35px;
+    }
+
+    .ing {
+        flex-direction: column;
+    }
+
+    .ingredients {
+        padding: 40px;
+    }
+    
+    .ingpic {
+        width: 200px;
+    }
+    
+    .ing p {
+        font-size: 45px;
+    }
+
+    .community {
+        height: 3600px;
+        justify-content:initial; 
+        flex-direction: column;
+        /* align-items: flex-start; */
+        text-align: center;
+        padding-bottom: initial;
+    }
+    
+    .sponsor {
+        padding: 70px 20px 70px 20px;
+        width: 800px;
+    }
+
+}
+
+@keyframes clink {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* @keyframes discoLogo {
+    0% {color: #00C9A7}
+    25% {color: #B39CD0}
+    50% {color: #FBEAFF}
+    75% {color: #845EC2}
+    100% {color: #DD45C0}
+} */
+
+@keyframes discoLogo {
+    0% {background-color: #00C9A7}
+    25% {background-color: #B39CD0}
+    50% {background-color: #FBEAFF}
+    75% {background-color: #6eef95}
+    100% {background-color: #DD45C0}
+}
