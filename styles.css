@@ -2,24 +2,15 @@
 
 body {
     margin: 0;
-    /* text-align: center; */
 }
 
-/* .head-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-} */
-
-.heady {
-    /* height: 100%;
-    width: 100%; */
+.head-container .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.whitelogo {
+.whiteLogo {
     position: absolute;
     width: 40%;
     z-index: 5;
@@ -37,13 +28,9 @@ body {
 
 .gaming {
     position: relative;
-    /* width: 100%; */
     height: 86vh;
     width: 100%;
 }
-
-/* .linky {
-} */
 
 .bar {
     position: absolute;
@@ -57,9 +44,7 @@ body {
 
 .bar2 {
     position: fixed;
-    /* bottom: 0; */
     background: #845EC2;
-    /* padding: 30px 0 30px 0; */
     width: 100%;
     margin: 0, 100px;
     top: 0;
@@ -105,7 +90,6 @@ a {
     position: fixed;
     bottom: 0;
     background: #845EC2;
-    /* padding: 8px 0 8px 0; */
     height: 50px;
     width: 100%;
     margin: 0, 100px;
@@ -117,9 +101,7 @@ a {
 .footbox {
     display: flex;
     color: #FBEAFF;
-    /* padding: 5px; */
     flex-direction: row;
-    /* width: 500px; */
     text-align: center;
     justify-content: space-around;
 }
@@ -151,16 +133,14 @@ a {
     margin: auto;
 }
 
-.cans {
+.beverages {
     height: 100vh;
-    border: 3px solid brown;
     display: flex;
     flex-direction: column;
 }
 
 .can {
     padding: 100px 50px 100px 50px;
-    border: 3px solid green;
 }
 
 .can:hover {
@@ -174,7 +154,6 @@ a {
     justify-content: center;
     align-items: center;
     top: 0%;
-    border: 3px solid blue;
 }
 
 .slide1 {
@@ -200,7 +179,6 @@ a {
     width: 175px;
     margin-left: 35px;
     z-index: 50;
-    border: 3px solid red;
 }
 
 .slidetext {
@@ -208,7 +186,6 @@ a {
     z-index: 51;
     font-size: 13px;
     width: 500px;
-    border: 2px solid red;
     color: white;
     margin-left: 30px;
     /* right: 15%;
@@ -227,7 +204,6 @@ a {
 .rightarrow {
     position: relative;
     height: 75px;
-    border: 2px solid green;
     left: 11%;
     z-index: 60;
 }
@@ -235,7 +211,6 @@ a {
 .leftarrow {
     position: relative;
     height: 75px;
-    border: 2px solid green;
     z-index: 60;
     margin-left: -10%;
 }
@@ -244,12 +219,10 @@ a {
     display: flex;
     background: #00C9A7;
     padding: 0 0 50px 0;
-    /* height: 400px; */
     height: 100vh;
     justify-content:center; 
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 h1 {
@@ -271,7 +244,6 @@ p {
     flex-direction: column;
     width: 600px;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .ing {
@@ -280,7 +252,6 @@ p {
     flex-direction: row;
     text-align: center;
     padding-top: 5px;
-    /* border: 1px solid red; */
 }
 
 .ingredients {
@@ -297,8 +268,6 @@ p {
 
 .community {
     display: flex;
-    /* border: 1px solid red; */
-    /* height: 400px; */
     height: 100vh;
     justify-content:center; 
     flex-direction: column;
@@ -311,7 +280,6 @@ p {
     width: 600px;
     flex-direction: column;
     text-align: center;
-    /* border: 1px solid red; */
     margin: auto;
 }
 
@@ -328,7 +296,6 @@ p {
     flex-wrap: wrap;
     width: 800px;
     text-align: center;
-    /* border: 1px solid red; */
     justify-content: center;
     margin: 20px auto 0 auto;
 }
@@ -339,8 +306,8 @@ p {
     width: 200px;
 }
 
-@media (max-width: 420px) {
-
+@media (max-width: 500px) {
+    
     h1 {
         font-size: 120px;
     }
@@ -405,7 +372,6 @@ p {
         height: 3600px;
         justify-content:initial; 
         flex-direction: column;
-        /* align-items: flex-start; */
         text-align: center;
         padding-bottom: initial;
     }
@@ -424,14 +390,6 @@ p {
     75% {transform: rotate(5deg);}
     100% {transform: rotate(0deg);}
 }
-
-/* @keyframes discoLogo {
-    0% {color: #00C9A7}
-    25% {color: #B39CD0}
-    50% {color: #FBEAFF}
-    75% {color: #845EC2}
-    100% {color: #DD45C0}
-} */
 
 @keyframes discoLogo {
     0% {background-color: #00C9A7}
