@@ -22,6 +22,9 @@ const right = document.getElementById("right");
 const allCans = function() {
     document.getElementById("flavors").style.display = "flex";
     document.getElementById("slides").style.display = "none";
+    document.querySelector(".slide1").style.display = "none";
+    document.querySelector(".slide2").style.display = "none";
+    document.querySelector(".slide3").style.display = "none";
 }
 
 const red = function() {
