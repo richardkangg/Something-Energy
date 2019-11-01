@@ -92,7 +92,7 @@ ul {
     border: 2px solid green;
 }
 
-.smalllogo {
+.smallLogo {
     width: 70px;
     animation-name: discoLogo;
     animation-duration: 3s;
@@ -114,7 +114,7 @@ a {
     display: flex;
 }
 
-.footscreen {
+.footScreen {
     position: fixed;
     bottom: 0;
     background: #845EC2;
@@ -126,7 +126,7 @@ a {
     flex-direction: row;
 }
 
-.footbox {
+.footBox {
     display: flex;
     color: #FBEAFF;
     flex-direction: row;
@@ -134,11 +134,11 @@ a {
     justify-content: space-around;
 }
 
-.foottext {
+.footText {
     text-align: left;
 }
 
-.footscreen p {
+.footScreen p {
     font-size: 12px;
 }
 
@@ -203,14 +203,14 @@ a {
     align-items: center;
 }
 
-.slidecan {
+.slideCan {
     position: relative;
     width: 175px;
     margin-left: 35px;
     z-index: 50;
 }
 
-.slidetext {
+.slideText {
     position: relative;
     z-index: 51;
     font-size: 13px;
@@ -221,7 +221,7 @@ a {
     margin-top: -1px; */
 }
 
-.slidebox {
+.slideBox {
     position: absolute;
     width: 800px;
     height: 200px;
@@ -230,14 +230,14 @@ a {
     z-index: 49;
 }
 
-.rightarrow {
+.rightArrow {
     position: relative;
     height: 75px;
     left: 13%;
     z-index: 60;
 }
 
-.leftarrow {
+.leftArrow {
     position: relative;
     height: 75px;
     z-index: 60;
@@ -287,7 +287,7 @@ p {
     padding: 20px;
 }
 
-.ingpic {
+.ingPic {
     width: 70px;
 }
 
@@ -304,7 +304,7 @@ p {
     padding-bottom: 60px;
 }
 
-.partnerstitle {
+.partnersTitle {
     display: flex;
     width: 600px;
     flex-direction: column;
@@ -335,7 +335,7 @@ p {
     width: 200px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     
     h1 {
         font-size: 120px;
@@ -350,15 +350,35 @@ p {
     }
 
     .gaming {
-        height: 75vh;
+    position: relative;
+    height: 150vh;
+    width: 345vw;
      }
 
     .overlay {
-        height: 75vh;
+    position: absolute;
+    height: 150vh;
+    width: 345vw;
+    background: #845EC2;
+    opacity: 45%;
+    z-index: 2;
+    }
+
+    .whiteLogo {
+        display: flex;
+        position: absolute;
+        width: 150%;
+        z-index: 5;
+        margin-left: 60%;
     }
 
     .bar {
-        position: fixed;
+    position: fixed;
+    padding: 30px 0 30px 0;
+    height: 80vh;
+    margin: 0, 100px;
+    bottom: 0;
+    z-index: 100;
     }
 
     ul {
@@ -367,8 +387,13 @@ p {
     }
 
     .bar2 {
-        top: initial;
+        position: fixed;
+        padding: 30px 0 30px 0;
+        height: 100vh;
+        margin: 0, 100px;
         bottom: 0;
+        top: initial;
+        z-index: 100;
     }
 
     footer {
@@ -379,6 +404,37 @@ p {
         height: 3600px;
         border-radius: 50px;
         margin: 35px;
+        width: 200vw;
+    }
+
+    .beverages {
+        height: 1000px;
+        padding-top: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flavors {
+        display: none;
+    }
+
+    .slides {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    .slide1 {
+        display: flex;
+    }
+
+    .slide2 {
+        display: flex;
+    }
+
+    .slide3 {
+        display: flex;
     }
 
     .ing {
@@ -389,7 +445,7 @@ p {
         padding: 40px;
     }
     
-    .ingpic {
+    .ingPic {
         width: 200px;
     }
     
@@ -403,11 +459,12 @@ p {
         flex-direction: column;
         text-align: center;
         padding-bottom: initial;
+        width: 200vw;
     }
     
     .sponsor {
         padding: 70px 20px 70px 20px;
-        width: 800px;
+        width: 700px;
     }
 
 }

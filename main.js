@@ -15,7 +15,7 @@ const hideFooter = function() {
 
 window.onscroll = function() {hideFooter()};
 
-const redcan = document.getElementById("redcan");
+const redcan = document.getElementById("redCan");
 const left = document.getElementById("left");
 const right = document.getElementById("right");
 
@@ -25,22 +25,19 @@ const allCans = function() {
 }
 
 const red = function() {
-    console.log("red can clicked");
     document.getElementById("flavors").style.display = "none";
     document.getElementById("slides").style.display = "flex";
     document.querySelector(".slide1").style.display = "flex";
-    document.querySelector(".leftarrow").style.visibility = "hidden";
+    document.querySelector(".leftArrow").style.visibility = "hidden";
 }
 
 const orange = function() {
-    console.log("orange can clicked");
     document.getElementById("flavors").style.display = "none";
     document.getElementById("slides").style.display = "flex";
     document.querySelector(".slide2").style.display = "flex";
 }
 
 const blue = function() {
-    console.log("blue can clicked");
     document.getElementById("flavors").style.display = "none";
     document.getElementById("slides").style.display = "flex";
     document.querySelector(".slide3").style.display = "flex";
@@ -55,7 +52,7 @@ const redRight = function() {
 const orangeLeft = function() {
     document.querySelector(".slide1").style.display = "flex";
     document.querySelector(".slide2").style.display = "none";
-    document.querySelector(".leftarrow").style.visibility = "hidden";
+    document.querySelector(".leftArrow").style.visibility = "hidden";
 }
 
 const orangeRight = function() {
@@ -72,7 +69,6 @@ const blueLeft = function() {
 const contact2 = function() {
     document.querySelector(".contactBox2").style.display = "flex";
     document.querySelector(".close").style.display = "flex";
-    console.log("contact clicked");
 }
 
 const close2 = function() {
