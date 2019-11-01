@@ -1,5 +1,7 @@
 #Something Energy Co.#
 
+![](website.gif)
+
 [Website Link](https://richardkangg.github.io/Something-Energy/)
 
 ###The Website###
