@@ -1,172 +1,196 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="head-container">
-            <div class="heady">
-                <img src="whitelogo.png" class="whitelogo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="wrapper">
+                <img src="images/whitelogo.png" class="whiteLogo">
                 <div class="overlay"></div>
-                <img src= "gaming.png" class="gaming">
+                <img src="images/gaming.png" class="gaming">
             </div>
-            <div class="linky" id="nav">
+            <div class="nav-container">
                 <div class="bar">
                     <ul>
-                        <li><a href="#mark1" id="beverage" class="nav">Our Beverages</a></li>
+                        <li><a href="#mark1" class="nav">Our Beverages</a></li>
                         <li><a href="#mark2" class="nav">About Us</a></li>
                         <li><a href="#mark3" class="nav">Community</a></li>
-                        <li><a href="#mark4" class="nav">Contact</a></li>
+                        <li><a href="#mark1" class="nav" onclick="contact2()"">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-            <div class="header2" id="header2">
-                    <div class="bar2">
-                        <ul>
-                            <li><a href="#mark1" id="beverage" class="nav">Our Beverages</a></li>
-                            <li><a href="#mark2" class="nav">About Us</a></li>
-                            <li><img src="csslogo.png" class="smalllogo"></li>
-                            <li><a href="#mark3" class="nav">Community</a></li>
-                            <li><a href="#mark4" class="nav">Contact</a></li>
-                        </ul>
-                    </div>
+        <div class="nav2" id="nav2">
+            <div class="bar2">
+                <ul>
+                    <li><a href="#mark1" id="beverage" class="nav">Our Beverages</a></li>
+                    <li><a href="#mark2" class="nav">About Us</a></li>
+                    <li><img src="images/csslogo.png" class="smallLogo"></li>
+                    <li><a href="#mark3" class="nav">Community</a></li>
+                    <li class="nav" onclick="contact2()">Contact</li>
+                </ul>
+            </div>
+            <div class="contactBox2">
+                <p>SOMETHING ENERGY DRINKS<br>
+<br>
+                        123 New York Ave, New York, NY 12345<br>
+                        (212) 123-4567<br>
+                        contact@somethingenergy.com<br>
+                        <br>
+                        HOURS<br>
+                        Mon-Fri 10AM-5PM<br>
+                        <br>
+                        For media inquiries, please contact<br>
+                        media@somethingenergy.com</p><br>
+                        <!-- <img src="map.png" class="map"> -->
+            </div>
+            <div class="close" onclick="close2()">close[X]</div>
+            
+        </div>
+    </header>
+    <div class="content">
+        <div class="beverages">
+                <div id="mark1"></div>
+            <div class="flavors" id="flavors">
+                <img src="images/can1.png" class="can" style="width:100%" id="redCan" onclick="red()">
+                <img src="images/can2.png" class="can" style="width:100%" id="orangeCan" onclick="orange()">
+                <img src="images/can3.png" class="can" style="width:100%" id="blueCan" onclick="blue()">
+            </div>
+            <div class="slides" id="slides">
+                <div class="slide1">
+                    <img src="images/leftarrow.png" class="leftArrow" id="redLeft">
+                    <img src="images/can1.png" class="slideCan" onclick="allCans()">
+                    <p class="slideText">
+                        BRUNO BERRY BLAST<br>
+                        --<br>
+                        CAFFIENE: 300mg<br>
+                        --<br>
+                        FLAVOR: Blueberry, Raspberry<br>
+                        <br>
+                        TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
+                        lacus venenatis, et consequat augue consectetur.<br>
+                        <br>
+                        NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
+                    </p>
+                    <div class="slideBox"></div>
+                    <img src="images/rightarrow.png" class="rightArrow" id="redRight" onclick="redRight()">
                 </div>
-        </header>
-        <div id="mark1"></div>
-        <div class="content">
-            <div class="cans">
-                <div class="flavors" id="flavors">
-                    <img src="can1.png" class="can" style="width:100%" id="redcan" onclick="red()">
-                    <img src="can2.png" class="can" style="width:100%" id="orangecan" onclick="orange()">
-                    <img src="can3.png" class="can" style="width:100%" id="bluecan" onclick="blue()">
+                <div class="slide2">
+                    <img src="images/leftarrow.png" class="leftArrow" id="orangeLeft" onclick="orangeLeft()">
+                    <img src="images/can2.png" class="slideCan" onclick="allCans()">
+                    <p class="slideText">
+                        PATO PARTY SPLASH<br>
+                        --<br>
+                        CAFFIENE: 300mg<br>
+                        --<br>
+                        FLAVOR: Fruit Punch<br>
+                        <br>
+                        TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
+                        lacus venenatis, et consequat augue consectetur.<br>
+                        <br>
+                        NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
+                    </p>
+                    <div class="slideBox"></div>
+                    <img src="images/rightarrow.png" class="rightArrow" id="orangeRight" onclick="orangeRight()">
                 </div>
-                <div class="slides" id="slides">
-                    <div class="slide1">
-                            <img src="leftarrow.png" class="leftarrow">
-                        <img src="can1.png" class="slidecan">
-                        <p class="slidetext">
-                                DRINK NAME<br>
-                                --<br>
-                                CAFFIENE: 300mg<br>
-                                --<br>
-                                FLAVOR: Something something<br>
-                                <br>
-                                TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                                ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
-                                lacus venenatis, et consequat augue consectetur.<br>
-                                <br>
-                                NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
-                        </p>
-                        <div class="slidebox"></div>
-                        <img src="rightarrow.png" class="rightarrow">
-                        </div>
-                        <div class="slide2">
-                                <img src="leftarrow.png" class="leftarrow">
-                            <img src="can2.png" class="slidecan">
-                            <p class="slidetext">
-                                    DRINK NAME<br>
-                                    --<br>
-                                    CAFFIENE: 300mg<br>
-                                    --<br>
-                                    FLAVOR: Something something<br>
-                                    <br>
-                                    TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                                    ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
-                                    lacus venenatis, et consequat augue consectetur.<br>
-                                    <br>
-                                    NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
-                            </p>
-                            <div class="slidebox"></div>
-                            <img src="rightarrow.png" class="rightarrow">
-                        </div>
-                            <div class="slide3">
-                                    <img src="leftarrow.png" class="leftarrow">
-                                <img src="can3.png" class="slidecan">
-                                <p class="slidetext">
-                                        DRINK NAME<br>
-                                        --<br>
-                                        CAFFIENE: 300mg<br>
-                                        --<br>
-                                        FLAVOR: Something something<br>
-                                        <br>
-                                        TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                                        ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
-                                        lacus venenatis, et consequat augue consectetur.<br>
-                                        <br>
-                                        NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
-                                </p>
-                                <div class="slidebox"></div>
-                                <img src="rightarrow.png" class="rightarrow">
-                    </div>
+                <div class="slide3">
+                    <img src="images/leftarrow.png" class="leftArrow" id="blueLeft" onclick="blueLeft()">
+                    <img src="images/can3.png" class="slideCan" onclick="allCans()">
+                    <p class="slideText">
+                        KATELYN KIWI MAX<br>
+                        --<br>
+                        CAFFIENE: 300mg<br>
+                        --<br>
+                        FLAVOR: Kiwi, Strawberry<br>
+                        <br>
+                        TASTING NOTES: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        ante tortor, dictum ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at
+                        lacus venenatis, et consequat augue consectetur.<br>
+                        <br>
+                        NUTRITION FACTS: Calories: 180, Total Carb. 3g, Sugars 2g
+                    </p>
+                    <div class="slideBox"></div>
+                    <img src="images/rightarrow.png" class="rightArrow" id="blueRight">
                 </div>
             </div>
-            <div id="mark2"></div>
-            <div class="about">
-                <div class="products">
-                    <h1>Real Energy</h1>
-                    <p>RELorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
+        </div>
+        <div id="mark2"></div>
+        <div class="about">
+            <div class="products">
+                <h1>Real Energy</h1>
+                <p>RELorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
                     ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at lacus venenatis, et
                     consequat augue consectetur.
+                </p>
+            </div>
+            <div class="ing">
+                <div class="ingredients">
+                    <h2>Caffeine</h2>
+                    <img src="images/ingredient.png" class="ingPic">
+                    <p>CaffLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
+                        ac lorem sed, dignissim laoreet lacus.</p>
+                </div>
+                <div class="ingredients">
+                    <h2>Taurine</h2>
+                    <img src="images/ingredient.png" class="ingPic">
+                    <p>TaurLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
+                        ac lorem sed, dignissim laoreet lacus.</p>
+                </div>
+                <div class="ingredients">
+                    <h2>B Vitamins</h2>
+                    <img src="ingredient.png" class="ingPic">
+                    <p>VitaLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
+                        ac lorem sed, dignissim laoreet lacus.</p>
+                </div>
+            </div>
+        </div>
+        <div id="mark3"></div>
+        <div class="community">
+            <div class="partners">
+                <div class="partnersTitle">
+                    <h1>Partners</h1>
+                    <p>PartLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
+                        ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at lacus venenatis, et
+                        consequat augue consectetur.
                     </p>
                 </div>
-                <div class="ing">
-                    <div class="ingredients">
-                        <h2>Caffeine</h2>
-                        <img src="ingredient.png" class="ingpic">
-                        <p>CaffLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
-                                ac lorem sed, dignissim laoreet lacus.</p>
-                    </div>
-                    <div class="ingredients">
-                        <h2>Taurine</h2>
-                        <img src="ingredient.png" class="ingpic">
-                        <p>TaurLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
-                                    ac lorem sed, dignissim laoreet lacus.</p>
-                    </div>
-                    <div class="ingredients">
-                        <h2>B Vitamins</h2>
-                        <img src="ingredient.png" class="ingpic">
-                        <p>VitaLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
-                                        ac lorem sed, dignissim laoreet lacus.</p>
-                    </div>
+                <div class="logos">
+                    <img src="images/sponsor.png" class="sponsor">
+                    <img src="images/sponsor.png" class="sponsor">
+                    <img src="images/sponsor.png" class="sponsor">
+                    <img src="images/sponsor.png" class="sponsor">
+                    <img src="images/sponsor.png" class="sponsor">
+                    <img src="images/sponsor.png" class="sponsor">
                 </div>
             </div>
-            <div id="mark3"></div>
-            <div class="community">
-                <div class="partners">
-                        <div class="partnerstitle">
-                            <h1>Partners</h1>
-                            <p>PartLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante tortor, dictum
-                                ac lorem sed, dignissim laoreet lacus. Quisque rutrum turpis at lacus venenatis, et
-                                consequat augue consectetur.
-                            </p>
-                        </div>
-                        <div class="logos">
-                                <img src="sponsor.png" class="sponsor">
-                                <img src="sponsor.png" class="sponsor">
-                                <img src="sponsor.png" class="sponsor">
-                                <img src="sponsor.png" class="sponsor">
-                                <img src="sponsor.png" class="sponsor">
-                                <img src="sponsor.png" class="sponsor">
-                        </div>
-                </div>
-            </div>
+        </div>
         <footer>
             <div class="foot" id="foot">
-                <div class="footscreen">
-                    <div class="footbox">
-                    <div class="foottext">
-                    <p>123 New York Ave // 212.123.4567
-                            <br>Distributors</p>
-                            </div>
-                    <div class="copyright"><p>© 2019 SOMETHING CO • WEBSITE BY RICHARD KANG</p></div>
-               </div>
+                <div class="footScreen">
+                    <div class="footBox">
+                        <div class="footText">
+                            <p>123 New York Ave // 212.123.4567
+                                <br>Distributors</p>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2019 SOMETHING CO • WEBSITE BY RICHARD KANG</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
-        </div>
-         </body>
-    <script src="main.js"></script>
+    </div>
+</body>
+<script src="main.js"></script>
+
 </html>

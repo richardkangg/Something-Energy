@@ -1,42 +1,80 @@
 
 
-// const beverage = document.body.querySelector('#beverage');
-// let link1 = document.getElementById("mark1").offsetTop;
-// console.log(link1);
-// beverage.onClick = scroll(0, link1);
-// beverage.onClick = scroll(0, 536);
-
-window.onscroll = function() {hideFooter()};
+document.getElementById("nav2").style.display = "none";
+document.getElementById("foot").style.display = "none";
 
 const hideFooter = function() {
-    if (document.documentElement.scrollTop > 535 ) {
-    document.getElementById("foot").className = "";
-    document.getElementById("header2").className = "";
+    if (document.documentElement.scrollTop < 535 ) {
+        document.getElementById("foot").style.display = "none";
+        document.getElementById("nav2").style.display = "none";
   } else {
-    document.getElementById("foot").className = "hide";
-    document.getElementById("header2").className = "hideNav";
+    document.getElementById("foot").style.display = "";
+    document.getElementById("nav2").style.display = "";
   }
 }
 
-const redcan = document.getElementById("redcan");
+window.onscroll = function() {hideFooter()};
+
+const redcan = document.getElementById("redCan");
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+
+const allCans = function() {
+    document.getElementById("flavors").style.display = "flex";
+    document.getElementById("slides").style.display = "none";
+    document.querySelector(".slide1").style.display = "none";
+    document.querySelector(".slide2").style.display = "none";
+    document.querySelector(".slide3").style.display = "none";
+}
 
 const red = function() {
-    console.log("red can clicked");
-    document.getElementById("flavors").className = "hide";
-    document.getElementById("slides").className = "display";
-    document.querySelector(".slide1").className = "display";
+    document.getElementById("flavors").style.display = "none";
+    document.getElementById("slides").style.display = "flex";
+    document.querySelector(".slide1").style.display = "flex";
+    document.querySelector(".leftArrow").style.visibility = "hidden";
 }
 
 const orange = function() {
-    console.log("orange can clicked");
-    document.getElementById("flavors").className = "hide";
-    document.getElementById("slides").className = "display";
-    document.querySelector(".slide2").className = "display";
+    document.getElementById("flavors").style.display = "none";
+    document.getElementById("slides").style.display = "flex";
+    document.querySelector(".slide2").style.display = "flex";
 }
 
 const blue = function() {
-    console.log("blue can clicked");
-    document.getElementById("flavors").className = "hide";
-    document.getElementById("slides").className = "display";
-    document.querySelector(".slide3").className = "display";
+    document.getElementById("flavors").style.display = "none";
+    document.getElementById("slides").style.display = "flex";
+    document.querySelector(".slide3").style.display = "flex";
+    document.querySelector("#blueRight").style.visibility = "hidden";
+}
+
+const redRight = function() {
+    document.querySelector(".slide1").style.display = "none";
+    document.querySelector(".slide2").style.display = "flex";
+}
+
+const orangeLeft = function() {
+    document.querySelector(".slide1").style.display = "flex";
+    document.querySelector(".slide2").style.display = "none";
+    document.querySelector(".leftArrow").style.visibility = "hidden";
+}
+
+const orangeRight = function() {
+    document.querySelector(".slide2").style.display = "none";
+    document.querySelector(".slide3").style.display = "flex";
+    document.querySelector("#blueRight").style.visibility = "hidden";
+}
+
+const blueLeft = function() {
+    document.querySelector(".slide3").style.display = "none";
+    document.querySelector(".slide2").style.display = "flex";
+}
+
+const contact2 = function() {
+    document.querySelector(".contactBox2").style.display = "flex";
+    document.querySelector(".close").style.display = "flex";
+}
+
+const close2 = function() {
+    document.querySelector(".contactBox2").style.display = "none";
+    document.querySelector(".close").style.display = "none";
 }
