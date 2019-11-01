@@ -19,6 +19,11 @@ const redcan = document.getElementById("redcan");
 const left = document.getElementById("left");
 const right = document.getElementById("right");
 
+const allCans = function() {
+    document.getElementById("flavors").style.display = "flex";
+    document.getElementById("slides").style.display = "none";
+}
+
 const red = function() {
     console.log("red can clicked");
     document.getElementById("flavors").style.display = "none";
@@ -62,4 +67,15 @@ const orangeRight = function() {
 const blueLeft = function() {
     document.querySelector(".slide3").style.display = "none";
     document.querySelector(".slide2").style.display = "flex";
+}
+
+const contact2 = function() {
+    document.querySelector(".contactBox2").style.display = "flex";
+    document.querySelector(".close").style.display = "flex";
+    console.log("contact clicked");
+}
+
+const close2 = function() {
+    document.querySelector(".contactBox2").style.display = "none";
+    document.querySelector(".close").style.display = "none";
 }

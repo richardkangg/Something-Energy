@@ -23,9 +23,10 @@
                         <li><a href="#mark1" class="nav">Our Beverages</a></li>
                         <li><a href="#mark2" class="nav">About Us</a></li>
                         <li><a href="#mark3" class="nav">Community</a></li>
-                        <li><a href="#mark4" class="nav">Contact</a></li>
+                        <li><a href="#mark1" class="nav" onclick="contact2()"">Contact</a></li>
                     </ul>
                 </div>
+                
             </div>
         </div>
         <div class="nav2" id="nav2">
@@ -35,14 +36,30 @@
                     <li><a href="#mark2" class="nav">About Us</a></li>
                     <li><img src="csslogo.png" class="smalllogo"></li>
                     <li><a href="#mark3" class="nav">Community</a></li>
-                    <li><a href="#mark4" class="nav">Contact</a></li>
+                    <li class="nav" onclick="contact2()">Contact</li>
                 </ul>
             </div>
+            <div class="contactBox2">
+                <p>SOMETHING ENERGY DRINKS<br>
+<br>
+                        123 New York Ave, New York, NY 12345<br>
+                        (212) 123-4567<br>
+                        contact@somethingenergy.com<br>
+                        <br>
+                        HOURS<br>
+                        Mon-Fri 10AM-5PM<br>
+                        <br>
+                        For media inquiries, please contact<br>
+                        media@somethingenergy.com</p><br>
+                        <!-- <img src="map.png" class="map"> -->
+            </div>
+            <div class="close" onclick="close2()">close[X]</div>
+            
         </div>
     </header>
-    <div id="mark1"></div>
     <div class="content">
         <div class="beverages">
+                <div id="mark1"></div>
             <div class="flavors" id="flavors">
                 <img src="can1.png" class="can" style="width:100%" id="redcan" onclick="red()">
                 <img src="can2.png" class="can" style="width:100%" id="orangecan" onclick="orange()">
@@ -51,7 +68,7 @@
             <div class="slides" id="slides">
                 <div class="slide1">
                     <img src="leftarrow.png" class="leftarrow" id="redLeft">
-                    <img src="can1.png" class="slidecan">
+                    <img src="can1.png" class="slidecan" onclick="allCans()">
                     <p class="slidetext">
                         DRINK NAME<br>
                         --<br>
@@ -70,7 +87,7 @@
                 </div>
                 <div class="slide2">
                     <img src="leftarrow.png" class="leftarrow" id="orangeLeft" onclick="orangeLeft()">
-                    <img src="can2.png" class="slidecan">
+                    <img src="can2.png" class="slidecan" onclick="allCans()">
                     <p class="slidetext">
                         DRINK NAME<br>
                         --<br>
@@ -89,7 +106,7 @@
                 </div>
                 <div class="slide3">
                     <img src="leftarrow.png" class="leftarrow" id="blueLeft" onclick="blueLeft()">
-                    <img src="can3.png" class="slidecan">
+                    <img src="can3.png" class="slidecan" onclick="allCans()">
                     <p class="slidetext">
                         DRINK NAME<br>
                         --<br>

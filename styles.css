@@ -64,6 +64,34 @@ ul {
 
 }
 
+.contactBox2 {
+    position: fixed;
+    display: none;
+    background: #845EC2;
+    top: 0;
+    height: 230px;
+    width: 100%;
+    color: white;
+    padding-top: 90px;
+    justify-content: center;
+    z-index: 69;
+}
+
+.close {
+    position: fixed;
+    display: none;
+    width: 100%;
+    background: #845EC2;
+    top: 320px;
+    z-index: 70;
+    justify-content: center;
+}
+
+.contactBox p {
+    margin-bottom: 0;
+    border: 2px solid green;
+}
+
 .smalllogo {
     width: 70px;
     animation-name: discoLogo;
@@ -137,6 +165,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 }
 
 .can {
@@ -204,7 +233,7 @@ a {
 .rightarrow {
     position: relative;
     height: 75px;
-    left: 11%;
+    left: 13%;
     z-index: 60;
 }
 
